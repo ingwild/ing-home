@@ -1,0 +1,8 @@
+set cmd:prompt [ \U ]$\040 
+debug 3
+alias l cls -l
+alias x exit
+
+set fish:connect-program "ssh -a -x -C"
+set sftp:connect-program "ssh -a -x -C"
+
