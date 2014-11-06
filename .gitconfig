@@ -9,6 +9,9 @@
 	short = true
 	branch = true
 
+[core]
+	pager = most
+
 [color]
 	ui = true
 
