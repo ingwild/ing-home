@@ -1,0 +1,14 @@
+[user]
+	name = Igor Mykhailov
+	email = ing@wild.in.ua
+
+[push]
+	default = simple
+
+[status]
+	short = true
+	branch = true
+
+[color]
+	ui = true
+
