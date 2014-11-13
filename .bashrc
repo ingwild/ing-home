@@ -5,10 +5,7 @@
 # version 1.0
 #
 
-# global definitions
-if [ -f /etc/profile ]; then
-  . /etc/profile
-fi
+# global
 
 # prompt
 PS1A='\[\012\[\e[0m\]['
