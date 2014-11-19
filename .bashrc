@@ -5,10 +5,7 @@
 # version 1.0
 #
 
-# global definitions
-if [ -f /etc/profile ]; then
-  . /etc/profile
-fi
+# global
 
 # prompt
 PS1A='\[\012\[\e[0m\]['
@@ -46,7 +43,7 @@ fi
 alias a='aptitude'
 alias bc='bc -lq'
 alias cal='ncal -M'
-alias df='df -hT -x tmpfs -x devtmpfs'
+alias df='df -hT -x rootfs -x tmpfs -x devtmpfs'
 alias du='du -sh'
 alias h='history | grep 2>/dev/null'
 alias i='ifstat'
