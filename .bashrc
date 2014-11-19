@@ -62,7 +62,7 @@ alias stow='stow -v'
 alias u='uptime'
 alias v='vmstat 1'
 alias x='exit'
-alias z='find . -type f \( -name \*.Z -or -name \*.gz -or -name \*.tgz \) -exec gzip -v --test {} \;; find . -type f -name \*.bz2 -exec bzip2 -v --test {} \;; find . -type f -name \*.zip -exec zip -T {} \;'
+alias z='find . -type f \( -name \*.Z -or -name \*.gz -or -name \*.tgz \) -exec gzip -v --test {} \;; find . -type f -name \*.bz2 -exec bzip2 -v --test {} \;; find . -type f -name \*.zip -exec zip -T {} \;; find . -type f -name \*.xz -exec xz -tv {} \;'
 
 # local
 
