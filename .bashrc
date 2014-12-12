@@ -22,8 +22,9 @@ export PS1
 export EDITOR='vim'
 export HISTFILE=
 export PATH='/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games'
-export PROMPT_COMMAND='echo -ne "\033]0;${HOSTNAME%%.*}\007"'
 export VISUAL='vim'
+
+[ $TERM != 'linux' ] && export PROMPT_COMMAND='echo -ne "\033]0;${HOSTNAME%%.*}\007"'
 
 # functions
 
