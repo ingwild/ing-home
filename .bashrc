@@ -35,10 +35,10 @@ f() { find . -iname "*$@*"; }
 # aliases
 
 if [ "$TERM" != "dumb" ]; then
-    alias ls='ls --color=auto -A'
-    alias grep='grep --color=auto';
-    alias egrep='egrep --color=auto';
-    alias fgrep='fgrep --color=auto';
+  alias ls='ls --color=auto -A'
+  alias grep='grep --color=auto';
+  alias egrep='egrep --color=auto';
+  alias fgrep='fgrep --color=auto';
 fi
 
 alias a='aptitude'
@@ -66,6 +66,6 @@ alias z='find . -type f \( -name \*.Z -or -name \*.gz -or -name \*.tgz \) -exec 
 
 # 256 colors
 if [ -n "$DISPLAY" -a "$TERM" == "xterm" ]; then
-    export TERM=xterm-256color
+  export TERM=xterm-256color
 fi
 
