@@ -52,7 +52,7 @@ alias j='jobs'
 alias l='ls -l'
 alias lt='ls -lt --color=always'
 alias log="tail -n0 -f /var/log/{{auth,mail}.log,syslog} | grcat conf.log"
-alias ps='ps axfo user,pid,vsz,rss,%cpu,stat,start_time,args | egrep -v "(\[kthreadd\]|\\_ \[.+\])" | grep -v grep'
+alias ps='ps axfo user,pid,vsz,rss,%cpu,stat,start_time,args | egrep -v "(\[kthreadd\]|\\_ \[.+\])" | cut -c1-$COLUMNS | sed -e "s/ *$//"'
 alias r='echo -ne \\ec'
 alias s='sudo su -'
 alias sum="xargs | tr ' ' '+' | bc -l"
