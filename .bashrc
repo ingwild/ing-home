@@ -28,7 +28,7 @@ export VISUAL='vim'
 
 # functions
 
-psg() { ps axuf | grep -v grep | grep "$@" -i --color=auto; }
+psg() { ps axuf | sed -e 's/ *$//' | grep -v grep | grep "$@" -i --color=auto; }
 lh() { ls -ltA --color=always "$@" | head -n20; }
 f() { find . -iname "*$@*"; }
 
