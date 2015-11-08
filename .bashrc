@@ -35,7 +35,7 @@ f() { find . -iname "*$@*"; }
 # aliases
 
 if [ "$TERM" != "dumb" ]; then
-  alias ls='ls --color=auto -A'
+  alias ls='ls --color=auto -A --group-directories-first'
   alias grep='grep --color=auto';
   alias egrep='egrep --color=auto';
   alias fgrep='fgrep --color=auto';
