@@ -31,6 +31,7 @@ export VISUAL='vim'
 psg() { ps axuf | sed -e 's/ *$//' | grep -v grep | grep "$@" -i --color=auto; }
 lh() { ls -ltA --color=always "$@" | head -n20; }
 f() { find . -iname "*$@*"; }
+bdiff() { diff <(xxd $1) <(xxd $2); }
 
 # aliases
 
