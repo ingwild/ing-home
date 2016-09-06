@@ -1,0 +1,2 @@
+defaults.pcm.!device 1
+defaults.ctl.!device 1
