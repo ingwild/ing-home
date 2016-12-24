@@ -35,7 +35,8 @@ bdiff() { diff <(xxd $1) <(xxd $2); }
 
 # aliases
 
-if [ "$TERM" != "dumb" ]; then
+if [ "$TERM" != "dumb" -a -x /usr/bin/dircolors ]; then
+  eval "$(dircolors -b)"
   alias ls='ls --color=auto -A --group-directories-first'
   alias grep='grep --color=auto';
   alias egrep='egrep --color=auto';
