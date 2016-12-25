@@ -37,6 +37,7 @@ bdiff() { diff <(xxd $1) <(xxd $2); }
 
 if [ "$TERM" != "dumb" -a -x /usr/bin/dircolors ]; then
   eval "$(dircolors -b)"
+  export LS_COLORS="$LS_COLORS:*.mobi=01;33:*.azw=01;33:*.azw3=01;33:*.pdf=01;33:*.djvu=01;33:"
   alias ls='ls --color=auto -A --group-directories-first'
   alias grep='grep --color=auto';
   alias egrep='egrep --color=auto';
